@@ -1,6 +1,6 @@
 ﻿using BepInEx.Logging;
 
-namespace ThirstyWolf
+namespace WolfCanTakeItem
 {
     internal static class Log
     {
