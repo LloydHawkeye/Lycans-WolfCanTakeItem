@@ -1,15 +1,15 @@
 ﻿using BepInEx;
 using UnityEngine;
 using WolfCanTakeItem.Patch;
+using static BepInEx.BepInDependency;
 
 namespace WolfCanTakeItem
 {
-    // Mod d'exemple qui permet à un joueur de péter sur commande en appuyant sur la touche P
-    // de son clavier. Vous pouvez vous en servir comme point de départ pour créer vos mods sur
-    // Lycans.
-
     [BepInPlugin(PLUGIN_GUID, PLUGIN_NAME, PLUGIN_VERSION)]
     [BepInProcess("Lycans.exe")]
+    //soft dépendance avec WolfWithPotionEffect permettant de garder l'effet des potions lors de la transformation en loup
+    [BepInDependency("LloydHawkeye.WolfWithPotionEffect", DependencyFlags.SoftDependency)]
+
     public class WolfCanTakeItem : BaseUnityPlugin
     {
         // Le GUID du plugin doit être unique au plugin que vous créez
