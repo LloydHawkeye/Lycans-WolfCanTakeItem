@@ -1,0 +1,10 @@
+{
+	"name": "WolfCanTakeItem",
+	"version_number": "1.0.1",
+	"website_url": "https://github.com/LloydHawkeye/Lycans-WolfWithPotionEffect",
+	"description": "Permet au loup d'utiliser les items une fois transformé",
+	"dependencies": [
+		"BepInEx-BepInExPack-5.4.2100",
+		"LycansModding-HookGenPatcher-1.0.0"
+	]
+}
